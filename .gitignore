@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Secretos y configuración local
+.env
+.env.*
+!.env.example
+
+# Datos del usuario: facturas, exportaciones, logs y datos locales.
+# Anclados a la raíz con "/" para no ocultar carpetas de código.
+/data/
+/exports/
+/facturas/
+/facturas-demo/
+/inbox/
+/invoices/
+/logs/
+*.log
+
+# Documentos que nunca deben subirse (las pruebas generan los suyos en temporales)
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# Visual Studio / VS Code
+.vs/
+*.user
+*.suo
+obj/
+bin/
+.vscode/*
+!.vscode/launch.json
+
+# Certificados y copias de la base de datos
+/tls/
+*.pfx
+*.pem
+*.key
+*.bak
+
+# Herramientas
+/.claude/
+.DS_Store
+Thumbs.db
